@@ -1,5 +1,7 @@
+<p id="thing"></p>
 <script>
 const urlParams = new URLSearchParams(window.location.search)
 const thing = urlParams.get('thing')
-document.write(thing)
+const element = document.getElementById('thing')
+element.innerText = thing
 </script>
